@@ -1,6 +1,6 @@
-
+'use strict';
 // console.log(calendar())
-console.log(getCatAgeObject(33))
+
 
 // const leftButton = document.querySelectorAll(`.leftButton`)
 // const rightButton = document.querySelectorAll(`.rightButton`)
@@ -91,7 +91,7 @@ function makeCalendar(year, month, day) {
 
     for (let i = 1; i < calendarRows.length; i++) {
         let cells = calendarRows[i].querySelectorAll(`.calendarTd`)
-        for (cell of cells) {
+        for (let cell of cells) {
             cell.classList.remove("empty")
         }
         for (let i = 0; i < cells.length; i++) {
@@ -135,7 +135,7 @@ function makeCalendar(year, month, day) {
     if(dayDate != `00`) {
         birthDateContainer.innerHTML = `${dayDate}.${monthDate}.${yearDate}`
         birthDateContainer.classList.add(`complete`)
-        document.querySelector(`.calendarBottom`).add(`complete`)
+        document.querySelector(`.calendarBottom`).classList.add(`complete`)
     }
     humanAge = new Date().getFullYear() - year 
     birthDateContainer.innerHTML = `${dayDate}.${monthDate}.${yearDate}`
@@ -150,7 +150,6 @@ function addDay() {
         if(event.target.innerHTML == ``) {
             return
         }
-        console.log(`1sa`)
         makeCalendar(Number(yearValue.value), Number(monthValue.value), Number(event.target.innerHTML))
     }
 }
@@ -158,7 +157,6 @@ function addDay() {
 acceptContainerButton.addEventListener(`click`, catAge) 
 
 function catAge() {
-    console.log(event.target.innerHTML)
     if (event.target.innerHTML == `Fill Date`) {
         alert(`Please indicate your birthday`)
     } else {
