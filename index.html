@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cat Age</title>
+</head>
+<body>
+    <div class="app">
+        <div class="mainCalendarContainer">
+            <div class="calendarHead">
+                <span>Select Birth Date</span>
+            </div>
+            <div class="calendarYearContainer">
+                <button class="leftButton"><</button>
+                <input type="text" class="yearValue">
+                <button class="rightButton">></button>
+            </div>
+            <div class="calendarMounthContainer">
+                <button class="leftButton"><</button>
+                <select id="select">
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                  </select>    
+                <button class="rightButton">></button>
+            </div>
+            <div class="calendarContainer">
+                <div class="calendarRow">
+                    <div class="calendarTd">Sun</div>
+                    <div class="calendarTd">Mon</div>
+                    <div class="calendarTd">Tue</div>
+                    <div class="calendarTd">Wed</div>
+                    <div class="calendarTd">Thu</div>
+                    <div class="calendarTd">Fri</div>
+                    <div class="calendarTd">Sat</div>
+                </div>
+                <div class="calendarRow">
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                </div>
+                <div class="calendarRow">
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                </div>
+                <div class="calendarRow">
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                </div>
+                <div class="calendarRow">
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                </div>
+                <div class="calendarRow">
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                </div>
+                <div class="calendarRow">
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                    <div class="calendarTd num"></div>
+                </div>
+            </div>
+            <div class="calendarBottom">
+                <div class="birthDateContainer"></div>
+                <button class="acceptContainerButton">Cat Age</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./node_modules/calendar-js/src/errors/InvalidMonthError.js"></script>
+    <script src="./node_modules/calendar-js/src/errors/InvalidMonthsAbbrError.js"></script>
+    <script src="./node_modules/calendar-js/src/errors/InvalidMonthsError.js"></script>
+    <script src="./node_modules/calendar-js/src/errors/InvalidWeekdayError.js"></script>
+    <script src="./node_modules/calendar-js/src/errors/InvalidWeekdayError.js"></script>
+    <script src="./node_modules/calendar-js/src/errors/InvalidWeekdaysAbbrError.js"></script>
+    <script src="./node_modules/calendar-js/src/errors/InvalidWeekdaysError.js"></script>
+    <script src="./node_modules/calendar-js/index.js"></script>
+
+    <script src="./node_modules/cat-age-calculator/src/humanToCatData.js"></script>
+    <script src="./node_modules/cat-age-calculator/src/index.js"></script>
+
+    <script src="./cat.js"></script>
+
+</body>
+</html>
