@@ -1,26 +1,7 @@
 'use strict';
-// console.log(calendar())
 
-
-// const leftButton = document.querySelectorAll(`.leftButton`)
-// const rightButton = document.querySelectorAll(`.rightButton`)
-
-// leftButton.addEventListener(`click`, reduceInputValue)
-
-// function reduceInputValue() {
-//     const target = event.target
-//     target.nextElementSibling.value = Number(target.previousElementSibling.value) - 1;
-// }
-
-// rightButton.addEventListener(`click`, increaseInputValue)
-
-// function increaseInputValue() {
-//     const target = event.target
-//     target.previousElementSibling.value = Number(target.previousElementSibling.value) + 1;
-// }
-
-// let yearValue = document.querySelector(`.yearValue`)
-// let mounthValue = document.querySelector(`.mounthValue`) 
+let calendar = require('calendar-js');
+let catCalc = require(`cat-age-calculator`)
 
 const calendarYearContainer = document.querySelector(`.calendarYearContainer`)
 const yearValue = document.querySelector(`.yearValue`)
@@ -161,20 +142,20 @@ function catAge() {
         alert(`Please indicate your birthday`)
     } else {
         let message = `You are a `
-        if (getCatAgeObject(humanAge)[`years`] && getCatAgeObject(humanAge)[`months`]) {
-            message += getCatAgeObject(humanAge)[`years`] + ` year(s)`
+        if (catCalc.getCatAgeObject(humanAge)[`years`] && catCalc.getCatAgeObject(humanAge)[`months`]) {
+            message += catCalc.getCatAgeObject(humanAge)[`years`] + ` year(s)`
             message += ` and `
-            message += getCatAgeObject(humanAge)[`months`] + ` month(s)`
+            message += catCalc.getCatAgeObject(humanAge)[`months`] + ` month(s)`
             alert(message + ` old cat`)
             return
         }
-        if (getCatAgeObject(humanAge)[`years`]) {
-            message += getCatAgeObject(humanAge)[`years`] + ` year(s)`
+        if (catCalc.getCatAgeObject(humanAge)[`years`]) {
+            message += catCalc.getCatAgeObject(humanAge)[`years`] + ` year(s)`
             alert(message + ` old cat`)
             return
         }
-        if (getCatAgeObject(humanAge)[`months`]) {
-            message += getCatAgeObject(humanAge)[`months`] + ` months`
+        if (catCalc.getCatAgeObject(humanAge)[`months`]) {
+            message += catCalc.getCatAgeObject(humanAge)[`months`] + ` months`
             alert(message + ` old cat`)
             return
         }

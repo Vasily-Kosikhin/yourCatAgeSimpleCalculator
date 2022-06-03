@@ -1,0 +1,24 @@
+{
+  "name": "cat_age",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vasily-Kosikhin/yourCatAgeSimpleCalculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vasily-Kosikhin/yourCatAgeSimpleCalculator/issues"
+  },
+  "homepage": "https://github.com/Vasily-Kosikhin/yourCatAgeSimpleCalculator#readme",
+  "dependencies": {
+    "calendar-js": "^1.4.4",
+    "cat-age-calculator": "^1.0.6"
+  }
+}
